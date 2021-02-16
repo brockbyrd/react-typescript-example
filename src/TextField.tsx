@@ -6,9 +6,9 @@ interface Person {
 }
 interface Props {
     text: string;
-    ok: boolean;
-    i: number;
-    fn: (bob: string) => string;
+    ok?: boolean;
+    i?: number;
+    fn?: (bob: string) => string;
     person: Person;
 }
 
