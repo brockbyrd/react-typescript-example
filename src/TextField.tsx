@@ -17,7 +17,7 @@ interface TextNode {
     text: string;
 }
 
-export const TextField: React.FC<Props> = ({ handleChange }) => {
+export const TextField: React.FC<Props> = ({}) => {
 
     const [count, setCount] = useState<TextNode>({text: 'hello'});
     const inputRef = useRef<HTMLInputElement>(null);
