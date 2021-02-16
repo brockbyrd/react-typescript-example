@@ -21,3 +21,19 @@ const TodoReducer = (state: State, action: Action) => {
             return state;
     }
 }
+
+export const ReducerExample: React.FC = () => {
+    const [todos, dispatch] = useReducer(TodoReducer, []);
+
+    return (
+        <div>
+            {JSON.stringify(todos)}
+            <button
+                onClick={() => {
+                    dispatch({type: "add", text: '...'});
+                }}>
+                    +
+            </button>
+        </div>
+    )
+}
